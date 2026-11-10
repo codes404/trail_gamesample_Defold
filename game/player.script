@@ -23,6 +23,7 @@ local anim_idle = hash("idle")
 local anim_jump = hash("jump")
 local anim_fall = hash("fall")
 
+-- its a cahnge made in the code chack for update
 
 function init(self)
 	-- this lets us handle input in this script
