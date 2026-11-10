@@ -1,11 +1,63 @@
-/.editor_settings
-/.internal
-/build
-.externalToolBuilders
+# ==============================================================================
+# 1. ALWAYS IGNORE CACHE & INTERNAL BUILD FILES
+# ==============================================================================
+build/
+.internal/
+.editor_settings
 .DS_Store
 Thumbs.db
-.lock-wscript
-*.pyc
-.project
-.cproject
-builtins
+
+# ==============================================================================
+# 2. IGNORE ART, ANIMATION, & AUDIO BINARY ASSETS
+# ==============================================================================
+# Images and Atlases
+*.png
+*.jpg
+*.jpeg
+*.tga
+*.atlas
+
+# Audio
+*.wav
+*.ogg
+*.mp3
+
+# Spine & 2D Animations
+*.spine
+*.spine-json
+*.json
+*.anim
+
+# Fonts & Tiles
+*.font
+*.tilesource
+*.tilemap
+
+# 3D, Shaders, & Particle Effects
+*.dae
+*.go
+*.collection
+*.particlefx
+*.material
+*.vp
+*.fp
+
+# Extensions and Native binaries
+*.app
+*.apk
+*.ipa
+*.exe
+*.zip
+*.ext
+
+# ==============================================================================
+# 3. ALLOW ONLY CODE & TEXT CONFIGURATIONS
+# ==============================================================================
+# This ensures essential settings and scripts are explicitly tracked
+!game.project
+!*.script
+!*.gui_script
+!*.render_script
+!*.lua
+!*.md
+!*.txt
